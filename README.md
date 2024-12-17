@@ -23,21 +23,27 @@ Pastikan Anda sudah menginstal hal-hal berikut:
 - pip
 
 Instal dependensi Python yang diperlukan:
-
+```bash
 pip install -r requirements.txt
+```
 
 Untuk menjalankan aplikasi Streamlit:
+```bash
+streamlit run main.py
+```
+atau
+```bash
+python -m streamlit run app.py
+```
 
-Salin kode
-streamlit run app.py
-Penggunaan
+## Penggunaan
 Unggah S-Box: Aplikasi Streamlit memungkinkan Anda untuk mengunggah S-Box dalam bentuk daftar 256 elemen. Anda dapat menempelkan S-Box langsung atau mengunggah file.
 
 Pilih Analisis: Setelah S-Box diunggah, Anda dapat memilih berbagai opsi analisis untuk menghitung properti dari S-Box tersebut.
 
 Lihat Hasil: Aplikasi akan menampilkan hasil dari setiap analisis, seperti SAC, LAP, entropy, dan lainnya.
 
-Metode Analisis
+## Metode Analisis
 Berikut adalah metode analisis kriptografi yang termasuk dalam proyek ini:
 
 1. Strict Avalanche Criterion (SAC)
@@ -61,7 +67,7 @@ Entropy dari S-Box memberi gambaran tentang jumlah informasi yang dimilikinya, y
 7. Bit Independence Criterion (BIC)
 Kriteria ini mengevaluasi seberapa independen bit-bit dalam output ketika bit-bit dalam input dibalik.
 
-Contoh S-Box
+## Contoh S-Box
 Sebuah contoh S-Box 8-bit (256 elemen) dapat dianalisis dengan alat ini. Berikut adalah contoh input:
 
 Salin kode
