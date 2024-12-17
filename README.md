@@ -24,7 +24,10 @@ Pastikan Anda sudah menginstal hal-hal berikut:
 
 Instal dependensi Python yang diperlukan:
 ```bash
-pip install -r requirements.txt
+pip install streamlit
+pip install numpy
+pip install pandas
+pip install openpyxl
 ```
 
 Untuk menjalankan aplikasi Streamlit:
@@ -71,7 +74,6 @@ Kriteria ini mengevaluasi seberapa independen bit-bit dalam output ketika bit-bi
 Sebuah contoh S-Box 8-bit (256 elemen) dapat dianalisis dengan alat ini. Berikut adalah contoh input:
 
 ```math
-\[
 \begin{bmatrix}
 99 & 205 & 85 & 71 & 25 & 127 & 113 & 219 & 63 & 244 & 109 & 159 & 11 & 228 & 94 & 214 \\
 77 & 177 & 201 & 78 & 5 & 48 & 29 & 30 & 87 & 96 & 193 & 80 & 156 & 200 & 216 & 86 \\
@@ -90,5 +92,4 @@ Sebuah contoh S-Box 8-bit (256 elemen) dapat dianalisis dengan alat ini. Berikut
 165 & 2 & 146 & 204 & 120 & 241 & 163 & 128 & 22 & 90 & 60 & 185 & 67 & 34 & 27 & 248 \\
 164 & 69 & 41 & 230 & 104 & 47 & 144 & 251 & 20 & 17 & 150 & 225 & 254 & 161 & 102 & 70 \\
 \end{bmatrix}
-\]
 ```
