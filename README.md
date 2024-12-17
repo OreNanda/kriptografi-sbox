@@ -30,13 +30,13 @@ pip install pandas
 pip install openpyxl
 ```
 
-Untuk menjalankan aplikasi Streamlit:
+Untuk menjalankan aplikasi Streamlit
 ```bash
 streamlit run main.py
 ```
 atau
 ```bash
-python -m streamlit run app.py
+python -m streamlit run main.py
 ```
 
 ## Penggunaan
