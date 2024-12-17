@@ -84,13 +84,13 @@ def main():
                 bic_sac_value = calculate_bic_sac(sbox)  
                 st.metric('Bit Independence Criterion - SAC (BIC-SAC)', f'{bic_sac_value:.10f}')
 
-                # Differential Approximation Probability  
-                dap_value = calculate_dap(sbox)  
-                st.metric('Differential Approximation Probability (DAP)', f'{dap_value:.10f}')
-
                 # Linear Approximation Probability
                 lap_value = linear_approximation_probability(sbox)
                 st.metric('Linear Approximation Probability (LAP)', f'{lap_value:.6f}')
+
+                # Differential Approximation Probability  
+                dap_value = calculate_dap(sbox)  
+                st.metric('Differential Approximation Probability (DAP)', f'{dap_value:.10f}')
 
                 # Export option
                 export_df = pd.DataFrame(sbox)
