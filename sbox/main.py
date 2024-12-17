@@ -13,7 +13,7 @@ from utils.entropy import compute_entropy
 from utils.bit_independence import calculate_bic_sac, calculate_bic_nl
 
 def main():
-    st.title('Advanced S-box Cryptographic Analysis')
+    st.title('S-box44 Cryptographic')
 
     # Layout to center the file uploader on the page
     col1, col2, col3 = st.columns([1, 4, 1])
@@ -66,11 +66,7 @@ def main():
                 )  
 
                 # Perform selected evaluations
-                st.subheader('S-box Cryptographic Evaluation')
-
-                # Linear Approximation Probability
-                lap_value = linear_approximation_probability(sbox)
-                st.metric('Linear Approximation Probability (LAP)', f'{lap_value:.6f}')
+                st.subheader('S-box44 Cryptographic Evaluation')
 
                 # Nonlinearity
                 nonlinearity = compute_nonlinearity(sbox)
@@ -78,19 +74,23 @@ def main():
 
                 # Strict Avalanche Criterion  
                 sac_value = strict_avalanche_criterion(sbox)  
-                st.metric('Strict Avalanche Criterion (SAC)', f'{sac_value:.10f}')  
-
-                # Differential Approximation Probability  
-                dap_value = calculate_dap(sbox)  
-                st.metric('Differential Approximation Probability (DAP)', f'{dap_value:.10f}')  
-
-                # BIC-SAC  
-                bic_sac_value = calculate_bic_sac(sbox)  
-                st.metric('Bit Independence Criterion - SAC (BIC-SAC)', f'{bic_sac_value:.10f}')  
+                st.metric('Strict Avalanche Criterion (SAC)', f'{sac_value:.10f}')
 
                 # BIC-NL  
                 bic_nl_value = calculate_bic_nl(sbox)  
-                st.metric('Bit Independence Criterion - Nonlinearity (BIC-NL)', str(bic_nl_value))    
+                st.metric('Bit Independence Criterion - Nonlinearity (BIC-NL)', str(bic_nl_value))
+
+                # BIC-SAC  
+                bic_sac_value = calculate_bic_sac(sbox)  
+                st.metric('Bit Independence Criterion - SAC (BIC-SAC)', f'{bic_sac_value:.10f}')
+
+                # Differential Approximation Probability  
+                dap_value = calculate_dap(sbox)  
+                st.metric('Differential Approximation Probability (DAP)', f'{dap_value:.10f}')
+
+                # Linear Approximation Probability
+                lap_value = linear_approximation_probability(sbox)
+                st.metric('Linear Approximation Probability (LAP)', f'{lap_value:.6f}')
 
                 # Export option
                 export_df = pd.DataFrame(sbox)
