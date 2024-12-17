@@ -70,6 +70,7 @@ Kriteria ini mengevaluasi seberapa independen bit-bit dalam output ketika bit-bi
 ## Contoh S-Box
 Sebuah contoh S-Box 8-bit (256 elemen) dapat dianalisis dengan alat ini. Berikut adalah contoh input:
 
+```math
 \[
 \begin{bmatrix}
 99 & 205 & 85 & 71 & 25 & 127 & 113 & 219 & 63 & 244 & 109 & 159 & 11 & 228 & 94 & 214 \\
@@ -90,3 +91,4 @@ Sebuah contoh S-Box 8-bit (256 elemen) dapat dianalisis dengan alat ini. Berikut
 164 & 69 & 41 & 230 & 104 & 47 & 144 & 251 & 20 & 17 & 150 & 225 & 254 & 161 & 102 & 70 \\
 \end{bmatrix}
 \]
+```
